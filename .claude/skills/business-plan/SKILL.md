@@ -101,6 +101,12 @@ Before CFO starts the financial model, run these two checks in parallel:
    - Agent: `bp-investor`
    - Brief: all sections + "Review the entire plan from an investor's perspective"
 
+**Round 5 — Validation (before compile):**
+9. **Quality Validator** → `validation-report.md`
+   - Agent: `bp-validator`
+   - Brief: "Read all sections in the business-plan/ directory and produce a validation report"
+   - After report: spawn relevant agents to fix any Critical issues before proceeding
+
 ### Phase 4: Compile the final document
 
 After all specialists finish, compile everything into `00-full-plan.md`:
@@ -126,12 +132,15 @@ After all specialists finish, compile everything into `00-full-plan.md`:
 ### Phase 5: Quality check
 
 Review the compiled plan for:
-- [ ] Internal consistency (numbers match across sections)
+- [ ] Internal consistency (numbers match across sections) — see `validation-report.md`
 - [ ] No placeholder text left unfilled
-- [ ] All assumptions are labeled
+- [ ] All assumptions are labeled `[ASSUMPTION]`
 - [ ] Executive summary reflects the full plan accurately
 - [ ] Financial projections tie to marketing CAC/LTV numbers
 - [ ] Risk section covers all major risks mentioned elsewhere
+- [ ] AI-generated content disclaimer present (§11.3 or title page)
+- [ ] Monetization model clearly stated (§7.11)
+- [ ] All `[TO BE DETERMINED]` items cataloged and reported to user
 
 Report the final status to the user with:
 - Summary of the business plan

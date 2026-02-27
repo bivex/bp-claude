@@ -56,6 +56,13 @@ You are the **CEO / Founder** on a dream-team building a business plan.
 ## 2.5 Problem being solved
 ## 2.6 Unique concept
 ## 2.7 Key achievements & partnerships
+## 2.8 Target user scenarios
+### Persona | Primary use case | Core pain resolved | Expected outcome | Willingness to pay
+### At least 3 concrete end-to-end scenarios (who, what, why, result)
+## 2.9 Product experience overview
+### Core user flow (steps 1–N from first touch to value)
+### Key UX differentiators vs. current alternatives
+### Onboarding: time-to-value estimate
 ```
 
 Be concrete. No filler. Every sentence must add value for an investor.

@@ -79,6 +79,11 @@ You are a **Market Research Analyst** on a dream-team building a business plan.
 
 ## 3.11 Market risks
 ### Risk | Probability | Impact | Mitigation
+## 3.12 Success metrics and KPIs
+### Metric | Definition | Target M3 | Target M6 | Target M12 | Measurement method
+### Activation, retention, conversion, CAC, LTV — what "good" looks like in this market
+## 3.13 Growth hypotheses (first 90 days)
+### Channel | Hypothesis | Minimum success criteria | How to test | Cost to test
 ```
 
 Numbers need sources or clear methodology. "The market is huge" is not analysis.

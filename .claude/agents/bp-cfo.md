@@ -48,6 +48,13 @@ You are the **CFO / Financial Director** on a dream-team building a business pla
 ## 7.8 CAPEX & OPEX breakdown
 ## 7.9 Scenario analysis (optimistic / base / pessimistic)
 ## 7.10 DCF valuation (if applicable)
+## 7.11 Monetization model
+### Model options considered (SaaS / usage-based / freemium / one-time / hybrid)
+### Recommended model with rationale
+### Pricing tiers | Features | Target segment | Monthly/annual price
+### Pricing sensitivity: effect of -20% / -40% price on break-even and runway
+## 7.12 Key financial risks
+### Risk | Probability | Revenue impact | Runway impact | Mitigation
 
 # 8. Funding Request
 ## 8.1 Amount & currency

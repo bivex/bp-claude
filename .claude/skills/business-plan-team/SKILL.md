@@ -62,6 +62,10 @@ Create an agent team with the following structure. All teammates receive the bus
 8. Spawn one more teammate as **Investment Banker** (agent: `bp-investor`):
    - Task: Review the entire plan from an investor perspective. Write `business-plan/investor-review.md`
 
+9. Spawn **Quality Validator** (agent: `bp-validator`):
+   - Task: Read all sections and write `business-plan/validation-report.md`
+   - After report: fix any Critical issues by messaging the relevant specialist
+
 ### Step 4: Compile and review
 
 Use the `/bp-compile` skill to assemble everything into `business-plan/00-full-plan.md`.

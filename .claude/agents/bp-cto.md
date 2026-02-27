@@ -53,6 +53,16 @@ You are the **CTO / Product Director** on a dream-team building a business plan.
 ### Price | COGS | Gross margin
 ## 5.12 Competitive moats
 ### Why this is hard to copy: technology / data / network effects / brand
+## 5.13 High-level architecture
+### Text diagram of components, data flow, integration points, APIs
+### External dependencies and their SLA / availability requirements
+## 5.14 AI / model dependencies (if applicable)
+### Provider | Model / version | Purpose | Cost per call | Fallback option
+### Model update strategy: how model upgrades are tested before deployment
+### Prompt versioning approach
+## 5.15 Observability and reliability design
+### Key metrics to monitor | Logging strategy | Alerting thresholds
+### Error handling | Graceful degradation | SLA targets (uptime, latency)
 ```
 
 Describe what exists TODAY vs. what's planned. Investors hate conflated tenses.

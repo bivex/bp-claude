@@ -22,6 +22,12 @@ Requires `CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS=1` in settings.
 /bp-compile ./business-plan/
 ```
 
+### Validate plan for consistency and quality
+```
+/bp-validate ./business-plan/
+```
+Runs automated checks: numerical consistency, assumption labeling, missing fields, hallucination patterns, internal logic gaps. Outputs `validation-report.md`. Run before `/bp-compile`.
+
 ### Investor-readiness sprint (harden for fundraising)
 ```
 /bp-investor-sprint ./business-plan/
@@ -41,6 +47,7 @@ Max 3 cycles. Outputs `sprint-summary.md` with resolved gaps and remaining found
 | CFO / Financial Director | `bp-cfo` | 7. Financial Projections, 8. Funding Request | `bp-financial`, `bp-funding` |
 | COO / Operations Director | `bp-coo` | 9. Operational Plan | `bp-operations` |
 | Investment Banker / VC Advisor | `bp-investor` | Investor Review | `bp-funding` |
+| Quality Validator | `bp-validator` | Validation report — runs after all sections | `bp-validate` |
 
 ## Business plan sections
 

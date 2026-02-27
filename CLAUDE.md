@@ -22,6 +22,13 @@ Requires `CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS=1` in settings.
 /bp-compile ./business-plan/
 ```
 
+### Investor-readiness sprint (harden for fundraising)
+```
+/bp-investor-sprint ./business-plan/
+```
+Run after `/business-plan` to iterate CEO + CFO + Investor in a loop until deal readiness score ≥ 7/10.
+Max 3 cycles. Outputs `sprint-summary.md` with resolved gaps and remaining founder action items.
+
 ## Team roles
 
 | Role | Agent | Sections | Skill |
@@ -48,6 +55,24 @@ Requires `CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS=1` in settings.
 9. **Operational Plan** — processes, logistics, IT, quality, compliance, HR
 10. **Risk Management** — risk matrix, mitigation plans, Plan B/C, early warnings
 11. **Appendix** — document checklist, supporting materials
+
+## Agent synergies
+
+The system has three validated collaboration patterns that produce the best results:
+
+| Synergy | Agents | Purpose |
+|---------|--------|---------|
+| **Strategy + Finance** | `bp-ceo` + `bp-cfo` | CEO vision grounded by CFO numbers — prevents economically unviable plans |
+| **Product-Market Fit** | `bp-researcher` + `bp-cmo` + `bp-cto` | Market data → positioning → product adaptation |
+| **Risk + Compliance** | `bp-legal` + `bp-coo` | Operations validated against regulatory constraints before launch |
+
+**Conflict resolution priority:** Legal/compliance > Financial viability > Market opportunity > Operational preference
+
+**Data flow order (validation priority):**
+1. Financials & Legal — errors here are fatal
+2. Market Research — without market evidence, revenue projections are guesses
+3. Product & Operations — how it actually works
+4. Executive Summary — a synthesis of all the above, written last
 
 ## Quality standards
 

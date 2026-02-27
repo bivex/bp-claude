@@ -74,10 +74,23 @@ Run the following specialists as subagents. They work independently but you pass
    - Agent: `bp-coo`
    - Brief: the business idea + product details + "Produce Section 9: Operational Plan"
 
-**Round 3 — Financials (after Rounds 1-2, uses all outputs):**
+**Round 2.5 — Cross-validation (before financials):**
+
+Before CFO starts the financial model, run these two checks in parallel:
+
+- **Legal reviews Marketing** (`bp-legal` reads `06-marketing-sales.md`):
+  - Check §6.2 brand claims for advertising standards compliance
+  - Check §6.7–6.9 for IP, data privacy, and GDPR issues
+  - Output: list of flagged items for CMO to address
+
+- **CMO confirms unit economics to CFO:**
+  - Pass §6.5 (CAC per channel, LTV, LTV/CAC, payback period) as explicit written input to CFO
+  - CFO does not start Round 3 until this data is received
+
+**Round 3 — Financials (after Rounds 1-2.5, uses all outputs):**
 6. **CFO / Financial Director** → `07-financial-projections.md`, `08-funding-request.md`
    - Agent: `bp-cfo`
-   - Brief: the business idea + all section summaries + "Produce Sections 7 and 8"
+   - Brief: the business idea + all section summaries + CMO unit economics + "Produce Sections 7 and 8"
 
 **Round 4 — Synthesis:**
 7. **CEO / Founder** → `01-executive-summary.md`, `02-company-description.md`

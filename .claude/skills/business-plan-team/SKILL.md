@@ -100,6 +100,14 @@ Legal ──────────────┘─────────�
 - If you spot an inconsistency in someone else's work, message them
 - CFO: wait for market data, product pricing, and marketing numbers before finalizing
 
+## Conflict resolution rules
+
+- **CMO vs CFO (budget):** CFO sets the budget envelope. CMO must justify each channel with LTV/CAC ≥ 3. If unresolved, Investor perspective is the tiebreaker: fund what investors will actually pay for.
+- **CTO vs COO (scope vs. speed):** Default to the MVP scope that COO can operationally support at launch. Future features belong on the roadmap, not in the launch plan.
+- **Any agent vs Legal:** Legal constraints are non-negotiable. All agents must address Legal's flagged items before the plan is finalized.
+- **Any agent vs Investor:** If Investor deal readiness score < 7/10, CEO and CFO must revise before `/bp-compile` is run.
+- **Data conflicts:** Researcher's market data takes precedence over estimates in other sections. If Researcher's numbers differ from what another agent assumed, the other agent revises.
+
 ## Important notes
 
 - All output in English
